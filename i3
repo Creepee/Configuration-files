@@ -1,15 +1,13 @@
 # Should you change your keyboard layout some time, delete
-# this file and re-run i3-config-wizard(1).
-#
+this file and re-run i3-config-wizard(1).
 
 # i3 config file (v4)
-#
+
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 set $mod Mod4
 
-# Font for window titles. Will also be used by the bar unless a different font
-# is used in the bar {} block below.
+# Font for window titles. Will also be used by the bar unless a different font is used in the bar {} block below.
 font pango:Ubuntu Mono Regular 20
 
 # Use Mouse+$mod to drag floating windows to their wanted position
@@ -98,17 +96,11 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym semicolon resize grow width 10 px or 10 ppt
-
-        # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
-
+        bindsym h resize shrink width 10 px or 10 ppt
+        bindsym l resize grow height 10 px or 10 ppt
+        bindsym k resize shrink height 10 px or 10 ppt
+        bindsym j resize grow width 10 px or 10 ppt
+        
         # back to normal: Enter or Escape
         bindsym Return mode "default"
         bindsym Escape mode "default"
@@ -131,8 +123,7 @@ client.focused_inactive $base03 $base03    $base02
 client.unfocused        $base03 $base03    $base02
 client.urgent           $base00 $base00    $base01
 
-# Start i3bar to display a workspace bar (plus the system information conky
-# finds out, if available)
+# Start i3bar to display a workspace bar (plus the system information conky finds out, if available)
 bar {
     status_command $HOME/bin/conky-i3bar
     position top
