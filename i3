@@ -1,5 +1,4 @@
-# Should you change your keyboard layout some time, delete
-this file and re-run i3-config-wizard(1).
+# Should you change your keyboard layout some time, delete this file and re-run i3-config-wizard(1).
 
 # i3 config file (v4)
 
@@ -97,9 +96,9 @@ mode "resize" {
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
         bindsym h resize shrink width 10 px or 10 ppt
-        bindsym l resize grow height 10 px or 10 ppt
-        bindsym k resize shrink height 10 px or 10 ppt
-        bindsym j resize grow width 10 px or 10 ppt
+        bindsym k resize grow height 10 px or 10 ppt
+        bindsym j resize shrink height 10 px or 10 ppt
+        bindsym l resize grow width 10 px or 10 ppt
         
         # back to normal: Enter or Escape
         bindsym Return mode "default"
